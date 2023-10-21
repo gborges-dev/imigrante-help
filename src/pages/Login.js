@@ -5,11 +5,11 @@ function Login() {
         <div className="Login">
             <h1>Imigrante Help</h1>
             <form>
-                <input type="text" placeholder="E-Mail" />
+                <input type="email" placeholder="Endereço de E-mail" />
                 <input type="password" placeholder="Senha" />
                 <div className="links"><a>Esqueceu sua senha?</a>
-                <a>Ainda não tem conta?</a></div>
-                <input type="Button" value="Entrar" />
+                <a href="/signin">Ainda não tem conta?</a></div>
+                <input type="Button" value="Fazer Login" />
             </form>
         </div>
     )

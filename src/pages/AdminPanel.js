@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Topbar from '../components/Topbar';
 
 const AdminPanel = () => {
   const [users, setUsers] = useState([]);
