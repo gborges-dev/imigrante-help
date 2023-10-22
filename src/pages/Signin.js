@@ -1,5 +1,3 @@
-import "./Login.css"
-
 function Signin() {
     return(
         <div className="Login">

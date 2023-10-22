@@ -1,27 +1,40 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import Topbar from '../components/Topbar';
+import React, { useState, useEffect } from 'react';
 
 const AdminPanel = () => {
-  const [users, setUsers] = useState([]);
+  // State para armazenar posts do banco de dados
+  const [posts, setPosts] = useState([]);
 
+  // UseEffect para buscar posts do banco de dados quando o componente monta
   useEffect(() => {
-    // Obter dados do servidor ao montar o componente
-    axios.get('/api/users')
-      .then(response => setUsers(response.data))
-      .catch(error => console.error(error));
+    fetch('/api/posts')
+      .then((res) => res.json())
+      .then((data) => setPosts(data));
   }, []);
 
+  // Função para excluir um post
+  const handleDelete = (postId) => {
+    fetch(`/api/posts/${postId}`, {
+      method: 'DELETE',
+    })
+      .then(() => {
+        setPosts(posts.filter((post) => post._id !== postId));
+      })
+      .catch((error) => console.error('Erro ao excluir o post:', error));
+  };
+
   return (
-    <div>
-      <h1>Painel Administrativo</h1>
+    <div className="admin-panel">
+      <h2>Painel de Administração</h2>
       <ul>
-        {users.map(user => (
-          <li key={user.id}>{user.username}</li>
+        {posts.map((post) => (
+          <li key={post._id}>
+            {post.title} -{' '}
+            <button onClick={() => handleDelete(post._id)}>Excluir</button>
+          </li>
         ))}
       </ul>
     </div>
   );
 };
 
-export default AdminPanel;
+export default AdminPanel
