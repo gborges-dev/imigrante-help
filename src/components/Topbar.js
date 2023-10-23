@@ -6,7 +6,7 @@ function Topbar() {
             <div className="botoes">
                 <a href="/">Início</a>
                 <a href="/forum">Fórum</a>
-                <a>Ajuda</a>
+                <a href="/help">Ajuda</a>
                 <a href="/login">Sua conta</a>
             </div>
         </div>

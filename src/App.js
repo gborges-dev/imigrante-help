@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Signin from './pages/Signin';
 import Forum from './pages/Forum';
 import AdminPanel from './pages/AdminPanel';
+import Help from './pages/Help';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/signin' Component={Signin} />
           <Route path='/forum' Component={Forum} />
           <Route path='/admin' Component={AdminPanel} />
+          <Route path='/help' Component={Help} />
         </Routes>
       </Router>
     </div>
