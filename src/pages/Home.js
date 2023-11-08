@@ -6,7 +6,7 @@ function Home() {
     return (
         <div>
             <Topbar />
-            <h1>Bem-vindo à Página Principal</h1>
+            <p className='banner'><img src='logo.jpg' /></p>
         </div>
     );
 }

@@ -70,3 +70,40 @@ input[type=button] {
   padding: 10px;
   border: 1px solid #ccc;
 }
+
+.cards-ajuda {
+  width: min-content;
+  margin: 0 auto;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+  width: 600px;
+  text-align: start;
+  padding: 0 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, rgba(0, 0, 0, 0.2) 0 4px 8px;
+  margin: 18px 0 0 0;
+  transition: 150ms ease-in-out;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px, rgba(0, 0, 0, 0.2) 0 8px 16px;
+}
+
+.card img {
+  margin: 0 12px 0 0;
+}
+
+.card-title {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 -14px 0;
+}
+
+.banner {
+  background: #501e63;
+  margin: 0;
+}
