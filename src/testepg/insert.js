@@ -7,8 +7,6 @@ async function insertData() {
     await db.query(queryEvent, ['Gustavo','123'])
 
     await db.end()
-
-    console.log("Deu certo krl");
 }
 
 insertData();

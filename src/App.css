@@ -42,35 +42,6 @@ input[type=button] {
   font-size: 0.9em;
 }
 
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.post-form {
-  margin-bottom: 20px;
-}
-
-.post-form input,
-.post-form textarea {
-  margin-bottom: 10px;
-  padding: 8px;
-  width: 100%;
-}
-
-.posts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.post {
-  width: 300px;
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
 .cards-ajuda {
   width: min-content;
   margin: 0 auto;

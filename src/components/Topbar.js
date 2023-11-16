@@ -7,6 +7,7 @@ function Topbar() {
                 <a href="/">Início</a>
                 <a href="/forum">Fórum</a>
                 <a href="/help">Ajuda</a>
+                <a href="/mapa">Mapa</a>
                 <a href="/login">Sua conta</a>
             </div>
         </div>

@@ -1,12 +1,11 @@
 import React from 'react';
-import DonationForm from '../components/DonationForm';
 import Topbar from '../components/Topbar';
 
 function Home() {
     return (
-        <div>
+        <div className='Home'>
             <Topbar />
-            <p className='banner'><img src='logo.jpg' /></p>
+            <img src='/images/fundo.webp' width="100%" />
         </div>
     );
 }
