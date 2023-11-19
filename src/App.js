@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Signin from './pages/Signin';
 import Forum from './pages/Forum';
 import AdminPanel from './pages/AdminPanel';
-import Help from './pages/Help';
+import Help from './pages/FAQ';
 import Mapa from './pages/Mapa';
 
 function App() {

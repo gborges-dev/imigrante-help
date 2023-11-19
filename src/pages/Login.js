@@ -1,16 +1,23 @@
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importar o CSS do Bootstrap
+import { Container, Form, Button } from 'react-bootstrap'; // Importar os componentes do Bootstrap
+
 function Login() {
-    return(
-        <div className="Login">
-            <h1>Imigrante Help</h1>
-            <form>
-                <input type="email" placeholder="Endereço de E-mail" />
-                <input type="password" placeholder="Senha" />
-                <div className="links"><a>Esqueceu sua senha?</a>
-                <a href="/signin">Ainda não tem conta?</a></div>
-                <input type="Button" value="Fazer Login" />
-            </form>
-        </div>
-    )
+    return (
+        <Container className="Login">
+            <h1>Login</h1>
+            <Form>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Control type="email" placeholder="Endereço de E-mail" />
+                </Form.Group>
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Control type="password" placeholder="Senha" />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Fazer Login
+                </Button>
+            </Form>
+        </Container>
+    );
 }
 
-export default Login
+export default Login;
